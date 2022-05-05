@@ -1,0 +1,162 @@
+// Typography of project
+
+@mixin typeface-title($size, $device: desktop) {
+  font-family: "Mukta", sans-serif;
+
+  //H1 heading
+  @if $size==h1 and $device==desktop {
+    font-size: 4rem; //64px to rem
+    line-height: 100%;
+
+  }
+
+  @else if $size==h1 and $device==mobile {
+    font-size: 2.25rem; //36px to rem
+    line-height: 120%;
+    font-weight: 500;
+  }
+
+  //H2 heading
+  @if $size==h2 and $device==desktop {
+    font-size: 3.25rem; //52px to rem
+    line-height: 110%;
+  }
+
+  @else if $size==h2 and $device==mobile {
+    font-size: 2.25rem; //36px to rem
+    line-height: 120%;
+  }
+
+  //H3 heading
+  @if $size==h3 and $device==desktop {
+    font-size: 2rem; //36px to rem
+    line-height: 120%;
+  }
+
+  @else if $size==h3 and $device==mobile {
+    font-size: 1.5rem; //24px to rem
+    line-height: 120%;
+  }
+
+  //H4 heading
+  @if $size==h4 and $device==desktop {
+    font-size: 1.5rem; //24px to rem
+    line-height: 130%;
+  }
+
+  @else if $size==h4 and $device==mobile {
+    font-size: 1.125rem; //18px to rem
+    line-height: 130%;
+  }
+
+  //H5 heading
+  @if $size==h5 and $device==desktop {
+    font-size: 1.125rem; //18px to rem
+    line-height: 140%;
+  }
+
+  @else if $size==h5 and $device==mobile {
+    font-size: 1rem; //16px to rem
+    line-height: 150%;
+  }
+}
+
+@mixin typeface-body($size: p2, $device: desktop) {
+  font-family: "Mukta", sans-serif;
+
+  //P1 paragraph
+  @if $size==p1 and $device==desktop {
+    font-size: 1.5rem; //24px to rem
+    line-height: 130%;
+  }
+
+  @else if $size==p1 and $device==mobile {
+    font-size: 1.125rem; //18px to rem
+    line-height: 130%;
+  }
+
+  //P2 paragraph
+  @if $size==p2 and $device==desktop {
+    font-size: 1.125rem; //18px to rem
+    line-height: 1.5;
+  }
+
+  @else if $size==p2 and $device==mobile {
+    font-size: 1.125rem; //18px to rem
+    line-height: 1.5;
+  }
+
+  //P3 paragraph
+  @if $size==p3 and $device==desktop {
+    font-size: 0.875rem; //14px to rem
+    line-height: 150%;
+  }
+
+  @else if $size==p3 and $device==mobile {
+    font-size: 0.875rem; //14px to rem
+    line-height: 150%;
+  }
+}
+
+h1 {
+  color: $black-dark;
+  @include typeface-title(h1, desktop);
+
+  @include responsive(s) {
+    @include typeface-title(h1, mobile);
+  }
+}
+
+h2 {
+  color: $black-dark;
+  @include typeface-title(h2, desktop);
+
+  @include responsive(s) {
+    @include typeface-title(h2, mobile);
+  }
+}
+
+h3 {
+  color: $black-dark;
+  @include typeface-title(h3, desktop);
+
+  @include responsive(s) {
+    @include typeface-title(h3, mobile);
+  }
+}
+
+h4 {
+  color: $black-dark;
+  @include typeface-title(h4, desktop);
+
+  @include responsive(s) {
+    @include typeface-title(h4, mobile);
+  }
+}
+
+p {
+  color: $gray-7;
+  @include typeface-body(p2, desktop);
+
+  @include responsive(s) {
+    @include typeface-body(p2, mobile);
+  }
+}
+
+.bold {
+  font-weight: bold;
+  color: $black-light;
+}
+
+strong {
+  color: $black-dark;
+  @include typeface-body(p2, desktop);
+
+  @include responsive(s) {
+    @include typeface-body(p2, mobile);
+  }
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,133 @@
+header {
+  width: 100%;
+  padding-top: $gap-2;
+  position: fixed;
+  z-index: 800;
+}
+
+.navbar {
+  max-width: $container-xl;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: $gap-2;
+
+  @include responsive(s) {
+    display: none;
+  }
+
+}
+
+.nav-link {
+  display: inline-block;
+  padding: $gap-1 $gap-2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  color: $gray-3;
+  transition: .7s ease;
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 0px;
+    top: -40px;
+    left: 50%;
+    background: linear-gradient(180deg, rgba(233, 29, 34, 0) 0%, #e91d22 100%);
+    transition: .7s ease;
+  }
+
+  &:hover {
+    color: $white-light;
+
+    &::after {
+      height: 40px;
+      background: linear-gradient (180deg, rgba(233, 29, 34, 0) 0%, #e91d22 100%);
+    }
+  }
+}
+
+.nav-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap-2;
+
+  svg {
+    width: $gap-3;
+
+    cursor: pointer;
+
+    path,
+    circle {
+      transition: .7s ease;
+    }
+
+    &:hover {
+
+      path,
+      circle {
+        fill: $red-light;
+        transform: translate3d(0, -3px, 0);
+      }
+    }
+  }
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.bx {
+
+  width: 48px;
+  height: 48px;
+  background-color: $white-light;
+  border-radius: $gap-1;
+  display: none;
+
+  @include responsive(s) {
+    display: block;
+  }
+
+
+}
+
+.logo {
+  max-width: 96px;
+
+  @include responsive(s) {
+    max-width: 100%;
+
+  }
+}
+
+.spiderman {
+  width: 130%;
+  transform: translate3d(-150px, -50px, 0);
+
+  @include responsive(xl) {
+    transform: translate3d(-190px, -20px, 0);
+    width: 140%;
+  }
+
+  @include responsive(s) {
+    width: 100%;
+    transform: translate3d(0, -20px, 0);
+  }
+}
+
