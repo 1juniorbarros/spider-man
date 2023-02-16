@@ -28,12 +28,16 @@ A Trilha Explorer contém tudo o que você precisa para desenvolver habilidades 
 
 - Você pode visualizar o layout do projeto através desse [link](https://www.figma.com/).
 - É necessário ter conta no Figma para acessá-lo.
+
 ### 💬 Contato
 
 - Caso tenha alguma dúvida ou queira saber de algo, estou disponivel nos links abaixo:
 
-| [![linkedin](https://img.shields.io/badge/linkedin-1C5944?style=for-the-badge&logo=linkedin&logoColor=FEFBFF)](https://www.linkedin.com/in/1juniorbarros)  |  [![instagram](https://img.shields.io/badge/instagram-1C5944?style=for-the-badge&logo=instagram&logoColor=FEFBFF)](https://instagram.com/1juniorbarros) | [![linkedin](https://img.shields.io/badge/gmail-1C5944?style=for-the-badge&logo=gmail&logoColor=FEFBFF)](https://www.linkedin.com/in/1juniorbarros) |
-|----------|----------|----------|
+[![linkedin](https://img.shields.io/badge/linkedin-1C5944?style=for-the-badge&logo=linkedin&logoColor=FEFBFF)](https://www.linkedin.com/in/1juniorbarros)
+ 
+[![instagram](https://img.shields.io/badge/instagram-1C5944?style=for-the-badge&logo=instagram&logoColor=FEFBFF)](https://instagram.com/1juniorbarros) 
+
+[![email](https://img.shields.io/badge/gmail-1C5944?style=for-the-badge&logo=gmail&logoColor=FEFBFF)](https://www.linkedin.com/in/1juniorbarros) 
 
 
 
